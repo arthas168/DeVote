@@ -1,0 +1,90 @@
+body {
+  background: var(--color-main-bgrd);
+  width: 90%;
+  margin: 0 auto; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* Typography */
+html {
+  font: var(--sizing-fs-base)/1.5 "Georgia", serif; }
+
+@media (min-width: 600px) {
+  html {
+    font-size: var(--sizing-fs-tablet); } }
+
+@media (min-width: 1260px) {
+  html {
+    font-size: var(--sizing-fs-laptop); } }
+
+@media (min-width: 1420px) {
+  html {
+    font-size: var(--sizing-fs-desktop); } }
+
+@media (min-width: 1660px) {
+  html {
+    font-size: var(--sizing-fs-huge); } }
+
+p, ul, ol, dl, table {
+  margin-bottom: var(--sizing-ws-base); }
+
+ul, ol {
+  padding-left: var(--sizing-ws-base); }
+
+h1, h2, h3 {
+  margin: 0 0 calc( var(--sizing-ws-base) / 3) 0; }
+
+nav.main-nav {
+  font-size: 18px;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  nav.main-nav ul {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    nav.main-nav ul li {
+      list-style: none; }
+    nav.main-nav ul a {
+      padding: 1rem 2.5rem;
+      text-decoration: none;
+      vertical-align: center;
+      border-bottom: 1.5px solid white;
+      border-top: 1.5px solid white;
+      text-align: center; }
+      nav.main-nav ul a:hover {
+        border-color: lime; }
+    nav.main-nav ul > li:nth-child(1) {
+      margin-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: -1rem; }
+      nav.main-nav ul > li:nth-child(1) span {
+        color: lime;
+        font-weight: bold; }
+      nav.main-nav ul > li:nth-child(1) i {
+        color: lime;
+        font-size: 38px; }
+  nav.main-nav a, nav.main-nav span {
+    color: white; }
+
+:root {
+  --color-main-bgrd: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  --sizing-fs-base: 12px;
+  --sizing-ws-base: 1.5em;
+  --sizing-lt-base: 3em;
+  --sizing-fs-tablet: 14px;
+  --sizing-fs-laptop: 16px;
+  --sizing-fs-desktop: 18px;
+  --sizing-fs-huge: 20px; }

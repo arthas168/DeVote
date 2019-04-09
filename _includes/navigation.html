@@ -1,0 +1,21 @@
+<nav class="main-nav">
+
+    <ul>
+        <li>
+            <i class="fas fa-vote-yea"></i>
+            <span>DeVote</span>
+        </li>
+        <li>
+            {% for page in site.pages %}
+
+            {% if page.url != '/feed.xml' and page.url != '/' %}
+        <li>
+            <a href="{{ page.url }}">
+                <span class="title">{{ page.title }}</span>
+            </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <span class="welcome">Welcome, {{user}}!</span>
+</nav>
