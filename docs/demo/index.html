@@ -7,24 +7,21 @@
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/site.css">
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../app.js"></script>
 </head>
 <body>
 
 <header class="site-header">
-
-    <!-- <h1><a href="/">DeVote - A New Era Of E-Government</a></h1> -->
-
     <nav class="main-nav">
-
     <ul>
         <li>
-            <i class="fas fa-vote-yea"></i>
-            <span>DeVote</span>
+            <a href="/"><img src="../images/positive-vote-logo.png" height="64" width="64" alt="thumbs-up-icon"/>
+                <img src="../images/positive-vote-underline.png" height="64" width="64" alt="thumbs-up-underlined"/>
+            </a>
         </li>
-        <li>
-            
-
-            
+        
+        
         <li>
             <a href="/about/">
                 <span class="title">About</span>
@@ -32,8 +29,7 @@
         </li>
         
         
-
-            
+        
         <li>
             <a href="/demo/">
                 <span class="title">Demo</span>
@@ -41,8 +37,7 @@
         </li>
         
         
-
-            
+        
         <li>
             <a href="/feedback/">
                 <span class="title">Feedback</span>
@@ -50,11 +45,9 @@
         </li>
         
         
-
-            
         
-
-            
+        
+        
         
     </ul>
     <span class="welcome">Welcome, !</span>
@@ -62,7 +55,29 @@
 </header>
 
 <main class="site-content">
-    
+    <div class="countdown-timer">Voting ends in <span id="timer"></span></div>
+<div class="start-btn-div"><span class="start">Start Vote</span></div>
+<div class="calculating-result-div"><span>The vote has ended! Calculating results. Please wait... </span><span
+        id="calc-timer"></span></div>
+<div class="vote-ended-div"><span>This vote has ended. Click here to see result.</span></div>
+
+<div class="confirmation-div">
+    <span>Are you sure?</span>
+    <span>Yes, vote</span>
+    <span>Cancel</span>
+
+</div>
+
+<div class="candidates-list">
+    <section class="candidate">
+        <img src="/images/trump.jpg" height="847" width="1200" alt="photo-of-donald-trump"/>
+        <button class="trump-btn"><span>Donald Trump</span></button>
+    </section>
+    <section class="candidate">
+        <img src="/images/hillary.jpeg" height="640" width="960" alt="photo-of-hillary-clinton"/>
+        <button class="hillary-btn"><span>Hillary Clinton</span></button>
+    </section>
+</div>
 </main>
 
 <footer class="site-footer">

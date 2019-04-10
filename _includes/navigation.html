@@ -1,14 +1,12 @@
 <nav class="main-nav">
-
     <ul>
         <li>
-            <i class="fas fa-vote-yea"></i>
-            <span>DeVote</span>
+            <a href="/"><img src="../images/positive-vote-logo.png" height="64" width="64" alt="thumbs-up-icon"/>
+                <img src="../images/positive-vote-underline.png" height="64" width="64" alt="thumbs-up-underlined"/>
+            </a>
         </li>
-        <li>
-            {% for page in site.pages %}
-
-            {% if page.url != '/feed.xml' and page.url != '/' %}
+        {% for page in site.pages %}
+        {% if page.url != '/feed.xml' and page.url != '/' %}
         <li>
             <a href="{{ page.url }}">
                 <span class="title">{{ page.title }}</span>
@@ -17,5 +15,5 @@
         {% endif %}
         {% endfor %}
     </ul>
-    <span class="welcome">Welcome, {{user}}!</span>
+    <span class="welcome">Welcome, {{ user }}!</span>
 </nav>

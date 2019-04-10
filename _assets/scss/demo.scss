@@ -1,0 +1,106 @@
+@import 'info-bars';
+
+.candidates-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 95%;
+  justify-content: space-between;
+  margin: 1.5rem auto 0;
+
+  img {
+    width: 36rem;
+    height: 26rem;
+    box-shadow: #0F2027;
+  }
+
+  section {
+    position: relative;
+  }
+
+  button {
+    width: 15rem;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    border-style: none;
+    position: absolute;
+    left: 3rem;
+    top: 14.5rem;
+    box-shadow: darkgray;
+
+    &:hover {
+      cursor: pointer;
+
+      &:before {
+        content: "Vote";
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+
+    &:hover span {
+      display: none;
+    }
+
+    span {
+      color: white;
+      font-size: 18px;
+    }
+  }
+
+  section:nth-child(1) button {
+    background: red;
+    border: 2px solid white;
+
+    &:hover {
+      background: red;
+    }
+  }
+
+  section:nth-child(2) button {
+    background: dodgerblue;
+    border: 2px solid white;
+
+    &:hover {
+      background: dodgerblue;
+    }
+  }
+}
+
+.confirmation-div {
+  width: 20rem;
+  height: 10rem;
+  background: white;
+  padding: 2rem;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid #419D78;
+  position: absolute;
+  z-index: 10;
+  left: 32rem;
+  top: 13rem;
+
+
+  span:nth-child(1), span:nth-child(2) {
+    color: #419D78;
+  }
+
+  span:nth-child(1){
+    font-size: 18px;
+    display:block;
+    margin-bottom: 2rem;
+  }
+
+  span:nth-child(2){
+    text-decoration: underline;
+    margin-right: 2rem;
+  }
+
+  span:nth-child(3){
+    color: red;
+    text-decoration: underline;
+    margin-left: 2rem;
+  }
+}

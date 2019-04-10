@@ -1,0 +1,28 @@
+.countdown-timer, .start-btn-div, .calculating-result-div, .resetting-div, .vote-ended-div {
+  background-color: #419D78;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: .5rem;
+}
+
+.vote-ended-div {
+  background-color: black;
+}
+
+.calculating-result-div {
+  background-color: red;
+}
+
+.start-btn-div span {
+  border: 2px solid white;
+  cursor: pointer;
+  padding: .75rem;
+
+  &:hover {
+    border: 2px solid #419D78;
+    background-color: white;
+    cursor: pointer;
+    color: #419D78;
+  }
+}
