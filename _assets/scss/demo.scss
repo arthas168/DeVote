@@ -69,10 +69,10 @@
   }
 }
 
-.confirmation-div {
+.confirmation-div, .vote-done-div, .winner-div{
   width: 20rem;
   height: 10rem;
-  background: white;
+  background: #10232A;
   padding: 2rem;
   flex-direction: column;
   text-align: center;
@@ -82,25 +82,51 @@
   left: 32rem;
   top: 13rem;
 
-
-  span:nth-child(1), span:nth-child(2) {
-    color: #419D78;
-  }
-
   span:nth-child(1){
     font-size: 18px;
     display:block;
     margin-bottom: 2rem;
+    color:white;
   }
 
   span:nth-child(2){
     text-decoration: underline;
     margin-right: 2rem;
+    &:hover{
+      cursor:pointer;
+    }
+    color: white;
+    font-size: 16px;
   }
 
   span:nth-child(3){
-    color: red;
+    color: white;
     text-decoration: underline;
     margin-left: 2rem;
+    &:hover{
+      cursor:pointer;
+    }
+    font-size: 16px;
+  }
+}
+
+.winner-div{
+  width: 20rem;
+  height: 13rem;
+  span:nth-child(2){
+    text-decoration: underline;
+    &:hover{
+      cursor:pointer;
+    }
+    color: white;
+    font-size: 16px;
+    margin-top: -2rem;
+  }
+}
+
+.vote-done-div{
+  font-size: 26px;
+  span{
+    margin-top:1.5rem;
   }
 }

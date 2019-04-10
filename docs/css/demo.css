@@ -7,6 +7,8 @@
 
 .vote-ended-div {
   background-color: black; }
+  .vote-ended-div:hover {
+    cursor: pointer; }
 
 .calculating-result-div {
   background-color: red; }
@@ -67,10 +69,10 @@
     .candidates-list section:nth-child(2) button:hover {
       background: dodgerblue; }
 
-.confirmation-div {
+.confirmation-div, .vote-done-div, .winner-div {
   width: 20rem;
   height: 10rem;
-  background: white;
+  background: #10232A;
   padding: 2rem;
   flex-direction: column;
   text-align: center;
@@ -79,16 +81,38 @@
   z-index: 10;
   left: 32rem;
   top: 13rem; }
-  .confirmation-div span:nth-child(1), .confirmation-div span:nth-child(2) {
-    color: #419D78; }
-  .confirmation-div span:nth-child(1) {
+  .confirmation-div span:nth-child(1), .vote-done-div span:nth-child(1), .winner-div span:nth-child(1) {
     font-size: 18px;
     display: block;
-    margin-bottom: 2rem; }
-  .confirmation-div span:nth-child(2) {
+    margin-bottom: 2rem;
+    color: white; }
+  .confirmation-div span:nth-child(2), .vote-done-div span:nth-child(2), .winner-div span:nth-child(2) {
     text-decoration: underline;
-    margin-right: 2rem; }
-  .confirmation-div span:nth-child(3) {
-    color: red;
+    margin-right: 2rem;
+    color: white;
+    font-size: 16px; }
+    .confirmation-div span:nth-child(2):hover, .vote-done-div span:nth-child(2):hover, .winner-div span:nth-child(2):hover {
+      cursor: pointer; }
+  .confirmation-div span:nth-child(3), .vote-done-div span:nth-child(3), .winner-div span:nth-child(3) {
+    color: white;
     text-decoration: underline;
-    margin-left: 2rem; }
+    margin-left: 2rem;
+    font-size: 16px; }
+    .confirmation-div span:nth-child(3):hover, .vote-done-div span:nth-child(3):hover, .winner-div span:nth-child(3):hover {
+      cursor: pointer; }
+
+.winner-div {
+  width: 20rem;
+  height: 13rem; }
+  .winner-div span:nth-child(2) {
+    text-decoration: underline;
+    color: white;
+    font-size: 16px;
+    margin-top: -2rem; }
+    .winner-div span:nth-child(2):hover {
+      cursor: pointer; }
+
+.vote-done-div {
+  font-size: 26px; }
+  .vote-done-div span {
+    margin-top: 1.5rem; }

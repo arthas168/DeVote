@@ -1,20 +1,49 @@
 $(document).ready(function () {
     let timerStarted = false;
+    let voteEnded = false;
 
     $('.countdown-timer').hide();
     $('.calculating-result-div').hide();
     $('.vote-ended-div').hide();
+    $('.confirmation-div').hide();
+    $('.trump-btn').hide();
+    $('.hillary-btn').hide();
+    $('.vote-done-div').hide();
+    $('.winner-div').hide();
 
     $(".start").click(function () {
         $(".start-btn-div").hide();
         initTimer();
-        votingSimulator();
         $(".countdown-timer").show();
-        console.log("started");
+        $(".hillary-btn").show();
+        $(".trump-btn").show();
     });
 
     function votingSimulator() {
+        let messege = '';
+        let randomTrumpVotes = Math.floor(Math.random() * 1000000) + 1000;
+        let randomHillaryVotes = Math.floor(Math.random() * 1000000) + 1000;
 
+        if (randomTrumpVotes > randomHillaryVotes) {
+            messege = "The winner is Donald Trump with " + numberWithCommas(randomTrumpVotes)
+                + " against " + numberWithCommas(randomHillaryVotes)
+                + " votes for Hillary Clinton."
+        } else if (randomHillaryVotes > randomTrumpVotes) {
+            messege = "The winner is Hillary Clinton with " + numberWithCommas(randomHillaryVotes) + " against "
+                + numberWithCommas(randomTrumpVotes)
+                + " votes for Donald Trump."
+        } else if (randomTrumpVotes === randomHillaryVotes) {
+            messege = "It's a tie! Good luck America..."
+        }
+
+        $('.winner-div span:nth-child(1)').text(messege);
+        $('.winner-div span').css('font-size', '16px');
+        $('.winner-div span').css('margin-top: -1.5rem');
+        $('.winner-div').show();
+    }
+
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
     function initTimer() {
@@ -59,11 +88,13 @@ $(document).ready(function () {
         }
 
         function calculateResults() {
+            $('.trump-btn').hide();
+            $('.hillary-btn').hide();
             $('.countdown-timer').hide();
             $('.calculating-result-div').show();
+            $('.confirmation-div').hide();
             setTimeout(showResults, 3000);
         }
-
 
         function showResults() {
             $('.calculating-result-div').hide();
@@ -72,10 +103,40 @@ $(document).ready(function () {
             $('.site-header').show();
         }
 
-        $(".hillary-btn").click(function () {
-
+        $(".trump-btn").click(function () {
+            $('.confirmation-div').show();
         });
 
+        $(".hillary-btn").click(function () {
+            $('.confirmation-div').show();
+        });
+
+        $(".confirmation-div span:nth-child(2)").click(function () {
+            $(".confirmation-div").hide();
+            $('.trump-btn').hide();
+            $('.hillary-btn').hide();
+            $('.vote-done-div').show();
+            setTimeout(removeDoneDiv, 2000);
+        });
+
+        $(".confirmation-div span:nth-child(3)").click(function () {
+            $('.confirmation-div').hide();
+        });
+
+        function removeDoneDiv() {
+            $('.vote-done-div').hide();
+        }
+
+        $(".vote-ended-div").click(function () {
+            if (!voteEnded) {
+                votingSimulator();
+                voteEnded = true;
+            }
+        });
+
+        $(".winner-div span:nth-child(2)").click(function () {
+            location.reload();
+        });
     }
 });
 

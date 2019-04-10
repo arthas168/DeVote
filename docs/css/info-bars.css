@@ -7,6 +7,8 @@
 
 .vote-ended-div {
   background-color: black; }
+  .vote-ended-div:hover {
+    cursor: pointer; }
 
 .calculating-result-div {
   background-color: red; }
