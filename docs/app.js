@@ -21,8 +21,8 @@ $(document).ready(function () {
 
     function votingSimulator() {
         let messege = '';
-        let randomTrumpVotes = Math.floor(Math.random() * 1000000) + 1000;
-        let randomHillaryVotes = Math.floor(Math.random() * 1000000) + 1000;
+        let randomTrumpVotes = Math.floor(Math.random() * 10000000) + 100000;
+        let randomHillaryVotes = Math.floor(Math.random() * 10000000) + 100000;
 
         if (randomTrumpVotes > randomHillaryVotes) {
             messege = "The winner is Donald Trump with " + numberWithCommas(randomTrumpVotes)

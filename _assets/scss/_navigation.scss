@@ -28,6 +28,12 @@ nav.main-nav {
         }
       }
 
+      &.current-page > a,
+      a:focus,
+      a:hover {
+        border-color: #419D78;
+      }
+
       &:nth-child(1) {
         margin-top: -1.5rem;
 
@@ -41,7 +47,7 @@ nav.main-nav {
           font-weight: bold;
         }
 
-        img:nth-child(2) {
+        img:nth-child(2){
           display: none;
         }
       }
