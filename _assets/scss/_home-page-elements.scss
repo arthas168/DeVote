@@ -3,24 +3,26 @@ body .main-section {
   background-size: cover;
   width: 100%;
   text-align: center;
-  padding: 8rem 3rem;
   margin: 1rem;
+  padding: 3rem 3rem 8rem;
+  border: 2px solid #419D78;
+
 
   & > *{
     padding: 1rem;
   }
 
+
   hr{
     padding:0;
-    width: 60%;
+    width: 62%;
     margin: 0 auto;
     border: 1px solid white;
     box-shadow: 1px 1px 1px #000000;
 
   }
 
-  & p:nth-child(1) {
-    font-size: 32px;
+  .main-title, .sub-title p {
     color: white;
     text-shadow: 1px 2px 1px #000000;
     margin-bottom:0;
@@ -28,7 +30,10 @@ body .main-section {
 
   & .sub-title p{
     padding-top: 2rem;
-    font-size: 20px;
+    margin-bottom: 4rem;
+    i{
+      font-size: 30px;
+      margin-bottom: .5rem
+    }
   }
 }
-

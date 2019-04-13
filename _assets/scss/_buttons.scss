@@ -1,0 +1,18 @@
+body .learn-more-btn {
+
+  margin-top: 2rem;
+  padding: 1.25rem 2rem;
+  text-decoration: none;
+  vertical-align: center;
+  border: 1.5px solid white;
+  text-align: center;
+  color:white;
+
+  span{
+    font-size: 18px;
+  }
+
+  &:hover {
+    border-color: #419D78;
+  }
+}

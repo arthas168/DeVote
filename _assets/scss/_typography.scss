@@ -1,3 +1,5 @@
+@import 'variables';
+
 * {
   padding: 0;
   margin: 0;
@@ -17,20 +19,71 @@ html {
   font: var(--sizing-fs-base)/1.5 "Georgia", serif;
 }
 
-@media (min-width: 600px) {
-  html { font-size: var(--sizing-fs-tablet); }
+
+@media (max-width: 600px) {
+  html {
+    font-size: var(--sizing-fs-phone);
+
+    .main-title {
+      font-size: var(--sizing-homepage-text-fs-phone);
+    }
+    .sub-title > p:nth-child(1) {
+      font-size: var(--sizing-sub-title-text-fs-phone);
+    }
+  }
+}
+
+@media (min-width: 601px) {
+  html {
+    font-size: var(--sizing-fs-tablet);
+
+    .main-title {
+      font-size: var(--sizing-homepage-text-fs-tablet);
+    }
+    .sub-title > p:nth-child(1){
+      font-size: var(--sizing-sub-title-text-fs-tablet);
+    }
+  }
 }
 
 @media (min-width: 1260px) {
-  html { font-size: var(--sizing-fs-laptop); }
+  html {
+    font-size: var(--sizing-fs-laptop);
+
+    .main-title {
+      font-size: var(--sizing-homepage-text-fs-laptop);
+    }
+
+    .sub-title > p:nth-child(1) {
+      font-size: var(--sizing-sub-title-text-fs-laptop);
+    }
+  }
 }
 
 @media (min-width: 1420px) {
-  html { font-size: var(--sizing-fs-desktop); }
+  html {
+    font-size: var(--sizing-fs-desktop);
+
+    .main-title {
+      font-size: var(--sizing-homepage-text-fs-desktop);
+    }
+    .sub-title > p:nth-child(1) {
+      font-size: var(--sizing-homepage-text-fs-desktop);
+    }
+  }
 }
 
 @media (min-width: 1660px) {
-  html { font-size: var(--sizing-fs-huge); }
+  html {
+    font-size: var(--sizing-fs-huge);
+
+    .main-title {
+      font-size: var(--sizing-homepage-text-fs-huge);
+    }
+    .sub-title > p:nth-child(1) {
+      font-size: var(--sizing-sub-title-text-fs-huge);
+    }
+  }
 }
 
 
@@ -43,5 +96,5 @@ ul, ol {
 }
 
 h1, h2, h3 {
-  margin: 0 0 calc( var(--sizing-ws-base) / 3 ) 0;
+  margin: 0 0 calc(var(--sizing-ws-base) / 3) 0;
 }
