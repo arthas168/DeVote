@@ -1,0 +1,11 @@
+@import 'variables';
+
+.site-footer {
+  background-color: var(--color-my-green);
+  padding: 1rem;
+  margin: 2rem 0;
+  p {
+    color: white;
+    text-shadow: 1px 2px 1px #000000;
+  }
+}

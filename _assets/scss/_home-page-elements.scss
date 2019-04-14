@@ -5,8 +5,7 @@ body .main-section {
   background-size: cover;
   width: 100%;
   text-align: center;
-  margin: 1rem;
-  padding: 2rem 8rem 6rem;
+  padding: 3rem 8rem 6rem;
   border: 2px solid var(--color-my-green);
 
   & > *{
@@ -29,11 +28,11 @@ body .main-section {
   }
 
   & .sub-title p{
-    padding-top: 1.25rem;
+    padding-top: .75rem;
     margin-bottom: 4rem;
     i{
       font-size: 30px;
-      margin-bottom: .5rem
+      margin-bottom: .75rem
     }
   }
 }
