@@ -49,7 +49,7 @@ $(document).ready(function () {
     function initTimer() {
         timerStarted = true;
         document.getElementById('timer').innerHTML =
-            "00" + ":" + "10";
+            "00" + ":" + "20";
         startTimer();
 
         function startTimer() {

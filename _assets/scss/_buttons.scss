@@ -1,3 +1,5 @@
+@import '_variables';
+
 body .learn-more-btn {
 
   margin-top: 2rem;
@@ -13,6 +15,6 @@ body .learn-more-btn {
   }
 
   &:hover {
-    border-color: #419D78;
+    border-color: var(--color-my-green);
   }
 }

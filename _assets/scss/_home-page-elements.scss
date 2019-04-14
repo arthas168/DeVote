@@ -1,17 +1,17 @@
+@import "variables";
+
 body .main-section {
   background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .6)), url(/images/e-voting.jpg);
   background-size: cover;
   width: 100%;
   text-align: center;
   margin: 1rem;
-  padding: 3rem 3rem 8rem;
-  border: 2px solid #419D78;
-
+  padding: 2rem 8rem 6rem;
+  border: 2px solid var(--color-my-green);
 
   & > *{
     padding: 1rem;
   }
-
 
   hr{
     padding:0;
@@ -29,7 +29,7 @@ body .main-section {
   }
 
   & .sub-title p{
-    padding-top: 2rem;
+    padding-top: 1.25rem;
     margin-bottom: 4rem;
     i{
       font-size: 30px;

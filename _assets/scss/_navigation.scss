@@ -1,3 +1,5 @@
+@import "variables";
+
 nav.main-nav {
 
   font-size: 18px;
@@ -24,14 +26,14 @@ nav.main-nav {
         text-align: center;
 
         &:hover {
-          border-color: #419D78;
+          border-color: var(--color-my-green);
         }
       }
 
       &.current-page > a,
       a:focus,
       a:hover {
-        border-color: #419D78;
+        border-color: var(--color-my-green);
       }
 
       &:nth-child(1) {

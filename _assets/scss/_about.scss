@@ -1,35 +1,43 @@
-body .sub-title p{
+@import '_variables';
+
+body .sub-title p {
   color: white;
   text-shadow: 1px 2px 1px #000000;
   margin-bottom: 1rem;
 
+  i {
+    color: var(--color-my-green)
+  }
+
   a {
-    color: #419D78;
+    color: var(--color-my-green);
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
   }
-
 }
 
-.container-div{
-  margin-top:1rem;
-  display:flex;
+.container-div {
+  margin-top: 1rem;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 2px solid #419D78;
+  border: 2px solid var(--color-my-green);
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5));
-  padding: 2rem 5rem;
+  padding: 5rem 5rem;
 
   section {
     text-align: center;
     max-width: 22rem;
-    &:nth-child(2){
+
+    &:nth-child(2) {
       text-align: left;
-      span{
+
+      span {
         margin-left: 3.5rem;
-        i{
-          color: #419D78;
+
+        i {
+          color: var(--color-my-green);
         }
       }
     }
