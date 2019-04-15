@@ -84,6 +84,7 @@ $(document).ready(function () {
 
         if (timerStarted) {
             $('.site-header').hide();
+            $('.site-footer').hide();
             $('body').css('padding-top', '7.6rem');
         }
 
@@ -101,6 +102,7 @@ $(document).ready(function () {
             $('body').css('padding-top', '0');
             $('.vote-ended-div').show();
             $('.site-header').show();
+            $('.site-footer').show();
         }
 
         $(".trump-btn").click(function () {

@@ -10,9 +10,11 @@ body .sub-title p {
   }
 
   a {
+    &:hover {
+      cursor: pointer;
+    }
     color: var(--color-my-green);
     font-weight: bold;
-    cursor: pointer;
     text-decoration: none;
   }
 }
