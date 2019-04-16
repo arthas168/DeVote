@@ -1,12 +1,8 @@
 @import "variables";
 
 nav.main-nav {
-
   font-size: 18px;
   padding-top: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 
   ul {
     width: 55%;
@@ -26,14 +22,14 @@ nav.main-nav {
         text-align: center;
 
         &:hover {
-          border-color: var(--color-my-green);
+          border-color: $my-green;
         }
       }
 
       &.current-page > a,
       a:focus,
       a:hover {
-        border-color: var(--color-my-green);
+        border-color: $my-green;
       }
 
       &:nth-child(1) {

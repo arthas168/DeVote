@@ -6,7 +6,7 @@ body .main-section {
   width: 100%;
   text-align: center;
   padding: 3rem 8rem 6rem;
-  border: 2px solid var(--color-my-green);
+  border: 2px solid $my-green;
 
   & > *{
     padding: 1rem;

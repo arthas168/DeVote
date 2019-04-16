@@ -1,7 +1,7 @@
 @import 'variables';
 
 .countdown-timer, .start-btn-div, .calculating-result-div, .resetting-div, .vote-ended-div {
-  background-color: var(--color-my-green);
+  background-color: $my-green;
   color: white;
   font-size: 20px;
   text-align: center;
@@ -25,9 +25,9 @@
   padding: .75rem;
 
   &:hover {
-    border: 2px solid var(--color-my-green);
+    border: 2px solid $my-green;
     background-color: white;
     cursor: pointer;
-    color: var(--color-my-green);
+    color: $my-green;
   }
 }

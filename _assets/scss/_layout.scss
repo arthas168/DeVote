@@ -1,5 +1,7 @@
+@import 'variables';
+
 body {
-    background: var(--color-main-bgrd);
+    background: $background-color;
     width: 90%;
     margin: 0 auto;
 }

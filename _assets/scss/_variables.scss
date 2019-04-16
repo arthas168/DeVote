@@ -1,7 +1,5 @@
+//css variables
 :root {
-  --color-main-bgrd: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-  --color-my-green: #419D78;
-
   --sizing-fs-base: 12px;
   --sizing-ws-base: 1.5em;
   --sizing-lt-base: 3em;
@@ -24,3 +22,8 @@
   --sizing-sub-title-text-fs-desktop: 28px;
   --sizing-sub-title-text-fs-huge: 32px;
 }
+
+//sass variables
+$my-green: #419D78;
+$background-color: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+

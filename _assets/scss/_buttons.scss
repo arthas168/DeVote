@@ -15,7 +15,7 @@ body .learn-more-btn, .submit-form-button{
   }
 
   &:hover {
-    border-color: var(--color-my-green);
+    border-color: $my-green;
     cursor:pointer;
   }
 }

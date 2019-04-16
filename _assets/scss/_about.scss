@@ -1,4 +1,4 @@
-@import '_variables';
+@import 'variables';
 
 body .sub-title p {
   color: white;
@@ -6,14 +6,14 @@ body .sub-title p {
   margin-bottom: 1rem;
 
   i {
-    color: var(--color-my-green)
+    color: $my-green;
   }
 
   a {
     &:hover {
       cursor: pointer;
     }
-    color: var(--color-my-green);
+    color: $my-green;
     font-weight: bold;
     text-decoration: none;
   }
@@ -24,7 +24,7 @@ body .sub-title p {
   display: grid;
   grid-template-columns: 2fr 1.5fr 2fr;
   grid-gap: 1rem;
-  border: 2px solid var(--color-my-green);
+  border: 2px solid $my-green;
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5));
   padding: 5rem 5rem;
 
@@ -39,7 +39,7 @@ body .sub-title p {
         margin-left: 3.5rem;
 
         i {
-          color: var(--color-my-green);
+          color: $my-green;
         }
       }
     }
