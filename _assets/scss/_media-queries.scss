@@ -28,7 +28,6 @@
     }
 
   }
-
   .container-div {
     padding: 1.5rem 0 .5rem;
     display: flex;
@@ -39,12 +38,49 @@
       margin: 0 auto .5rem;
 
       &:nth-child(2) {
-        width: 30%;
+        width: 25%;
         margin: 0 auto .5rem;
       }
     }
 
   }
+
+  .confirmation-div,.vote-done-div{
+    left: 19rem;
+    top: 12rem;
+  }
+
+  .winner-div{
+    left: 19rem;
+    top: 28rem;
+    span:nth-child(1){
+      margin-bottom: 0;
+    }
+  }
+
+  .candidates-list {
+    width: 50%;
+    margin: 2rem auto 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 27rem;
+      height: 20rem;
+    }
+
+    .hillary-btn, .trump-btn{
+      left: 3rem;
+      top: 10.5rem;
+    }
+
+  }
+
+  .form-container .icon{
+    left: 12px;
+    top: 44px;
+  }
+
 
   .site-footer {
     margin: 1rem 0;
@@ -69,9 +105,38 @@
   .container-div {
     section {
       &:nth-child(2) {
-        width: 45%;
+        width: 40%;
       }
     }
 
+  }
+  .candidates-list {
+    width: 95%;
+    margin: 2rem auto 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 24rem;
+      height: 17rem;
+    }
+  }
+
+  .form-container .icon{
+    left: 10px;
+    top: 38px;
+  }
+
+  .confirmation-div,.vote-done-div{
+    left: 5rem;
+    top: 12rem;
+  }
+
+  .winner-div{
+    left: 6rem;
+    top: 28rem;
+    span:nth-child(1){
+      margin-bottom: 0;
+    }
   }
 }
