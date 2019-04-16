@@ -1,7 +1,7 @@
 @import "variables";
 
 body .main-section {
-  background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .6)), url(/images/e-voting.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .6)), url("../images/e-voting.jpg");
   background-size: cover;
   width: 100%;
   text-align: center;
