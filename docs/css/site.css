@@ -208,6 +208,31 @@ body .main-section {
       font-size: 30px;
       margin-bottom: .75rem; }
 
+.countdown-timer, .start-btn-div, .calculating-result-div, .resetting-div, .vote-ended-div {
+  background-color: #419D78;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: .5rem; }
+
+.vote-ended-div {
+  background-color: black; }
+  .vote-ended-div:hover {
+    cursor: pointer; }
+
+.calculating-result-div {
+  background-color: red; }
+
+.start-btn-div span {
+  border: 2px solid white;
+  cursor: pointer;
+  padding: .75rem; }
+  .start-btn-div span:hover {
+    border: 2px solid #419D78;
+    background-color: white;
+    cursor: pointer;
+    color: #419D78; }
+
 nav.main-nav {
   font-size: 18px;
   padding-top: 3rem; }
