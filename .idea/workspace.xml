@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="966509f6-a485-470f-b8a2-94689edfe395" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_demo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_demo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_feedback.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_feedback.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_home-page-elements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_home-page-elements.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_info-bars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_info-bars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_media-queries.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_media-queries.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/site.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/site.scss" afterDir="false" />
-    </list>
+    <list default="true" id="966509f6-a485-470f-b8a2-94689edfe395" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -29,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_assets/scss/_home-page-elements.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="375">
+              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -298,15 +285,16 @@
       <workItem from="1555333654145" duration="2648000" />
       <workItem from="1555386358572" duration="17701000" />
       <workItem from="1555415219874" duration="4739000" />
-      <workItem from="1555427374850" duration="9839000" />
+      <workItem from="1555427374850" duration="11285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148641000" />
+    <option name="totallyTimeSpent" value="150087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4852941" visible="true" weight="0.29306486" />
       <window_info id="Structure" order="1" sideWeight="0.5147059" side_tool="true" weight="0.18195377" />
@@ -322,7 +310,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.7665921" visible="true" weight="0.31535947" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.7665921" weight="0.31535947" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003728" side_tool="true" weight="0.32843137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -554,8 +542,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_assets/scss/_home-page-elements.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        <state relative-caret-position="375">
+          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
         </state>
       </provider>
     </entry>
