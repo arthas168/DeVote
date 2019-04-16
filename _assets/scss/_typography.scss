@@ -25,7 +25,7 @@ html {
     .main-title {
       font-size: var(--sizing-homepage-text-fs-phone);
     }
-    .sub-title > p:nth-child(1) {
+    .sub-title > h1:nth-child(1) {
       font-size: var(--sizing-sub-title-text-fs-phone);
     }
   }
@@ -38,7 +38,7 @@ html {
     .main-title {
       font-size: var(--sizing-homepage-text-fs-tablet);
     }
-    .sub-title > p:nth-child(1){
+    .sub-title > h1:nth-child(1){
       font-size: var(--sizing-sub-title-text-fs-tablet);
     }
   }
@@ -52,7 +52,7 @@ html {
       font-size: var(--sizing-homepage-text-fs-laptop);
     }
 
-    .sub-title > p:nth-child(1) {
+    .sub-title > h1:nth-child(1) {
       font-size: var(--sizing-sub-title-text-fs-laptop);
     }
   }
@@ -65,7 +65,7 @@ html {
     .main-title {
       font-size: var(--sizing-homepage-text-fs-desktop);
     }
-    .sub-title > p:nth-child(1) {
+    .sub-title > h1:nth-child(1) {
       font-size: var(--sizing-homepage-text-fs-desktop);
     }
   }
@@ -78,7 +78,7 @@ html {
     .main-title {
       font-size: var(--sizing-homepage-text-fs-huge);
     }
-    .sub-title > p:nth-child(1) {
+    .sub-title > h1:nth-child(1) {
       font-size: var(--sizing-sub-title-text-fs-huge);
     }
   }

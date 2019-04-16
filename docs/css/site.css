@@ -37,7 +37,7 @@ html {
     font-size: var(--sizing-fs-phone); }
     html .main-title {
       font-size: var(--sizing-homepage-text-fs-phone); }
-    html .sub-title > p:nth-child(1) {
+    html .sub-title > h1:nth-child(1) {
       font-size: var(--sizing-sub-title-text-fs-phone); } }
 
 @media (min-width: 601px) {
@@ -45,7 +45,7 @@ html {
     font-size: var(--sizing-fs-tablet); }
     html .main-title {
       font-size: var(--sizing-homepage-text-fs-tablet); }
-    html .sub-title > p:nth-child(1) {
+    html .sub-title > h1:nth-child(1) {
       font-size: var(--sizing-sub-title-text-fs-tablet); } }
 
 @media (min-width: 1260px) {
@@ -53,7 +53,7 @@ html {
     font-size: var(--sizing-fs-laptop); }
     html .main-title {
       font-size: var(--sizing-homepage-text-fs-laptop); }
-    html .sub-title > p:nth-child(1) {
+    html .sub-title > h1:nth-child(1) {
       font-size: var(--sizing-sub-title-text-fs-laptop); } }
 
 @media (min-width: 1420px) {
@@ -61,7 +61,7 @@ html {
     font-size: var(--sizing-fs-desktop); }
     html .main-title {
       font-size: var(--sizing-homepage-text-fs-desktop); }
-    html .sub-title > p:nth-child(1) {
+    html .sub-title > h1:nth-child(1) {
       font-size: var(--sizing-homepage-text-fs-desktop); } }
 
 @media (min-width: 1660px) {
@@ -69,7 +69,7 @@ html {
     font-size: var(--sizing-fs-huge); }
     html .main-title {
       font-size: var(--sizing-homepage-text-fs-huge); }
-    html .sub-title > p:nth-child(1) {
+    html .sub-title > h1:nth-child(1) {
       font-size: var(--sizing-sub-title-text-fs-huge); } }
 
 p, ul, ol, dl, table {
@@ -197,14 +197,15 @@ body .main-section {
     margin: 0 auto;
     border: 1px solid white;
     box-shadow: 1px 1px 1px #000000; }
-  body .main-section .main-title, body .main-section .sub-title p {
+  body .main-section .main-title, body .main-section .sub-title p, body .main-section .sub-title h1 {
     color: white;
     text-shadow: 1px 2px 1px #000000;
     margin-bottom: 0; }
-  body .main-section .sub-title p {
+  body .main-section .sub-title p, body .main-section .sub-title h1 {
     padding-top: .75rem;
-    margin-bottom: 4rem; }
-    body .main-section .sub-title p i {
+    margin-bottom: 4rem;
+    font-weight: initial; }
+    body .main-section .sub-title p i, body .main-section .sub-title h1 i {
       font-size: 30px;
       margin-bottom: .75rem; }
 
@@ -302,10 +303,11 @@ nav.main-nav {
         color: #15262E;
         width: 22.5rem;
         padding: .4rem; }
-  .form-container p {
+  .form-container p, .form-container h1 {
     margin-bottom: .5rem;
     color: white;
-    text-align: center; }
+    text-align: center;
+    font-weight: initial; }
   .form-container hr {
     margin-top: 0.25rem;
     width: 23rem;
@@ -431,17 +433,18 @@ body .learn-more-btn, .submit-form-button {
   .vote-done-div span {
     margin-top: 1.5rem; }
 
-body .sub-title p {
+body .sub-title p, body .sub-title h1 {
   color: white;
   text-shadow: 1px 2px 1px #000000;
-  margin-bottom: 1rem; }
-  body .sub-title p i {
+  margin-bottom: 1rem;
+  font-weight: initial; }
+  body .sub-title p i, body .sub-title h1 i {
     color: #419D78; }
-  body .sub-title p a {
+  body .sub-title p a, body .sub-title h1 a {
     color: #419D78;
     font-weight: bold;
     text-decoration: none; }
-    body .sub-title p a:hover {
+    body .sub-title p a:hover, body .sub-title h1 a:hover {
       cursor: pointer; }
 
 .container-div {
