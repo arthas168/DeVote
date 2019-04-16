@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="966509f6-a485-470f-b8a2-94689edfe395" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/demo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/demo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/feed.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -214,12 +214,6 @@
             <path>
               <item name="DeVote" type="b2602c69:ProjectViewProjectNode" />
               <item name="DeVote" type="462c0819:PsiDirectoryNode" />
-              <item name="_assets" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DeVote" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DeVote" type="462c0819:PsiDirectoryNode" />
               <item name="_includes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -327,12 +321,12 @@
       <workItem from="1555333654145" duration="2648000" />
       <workItem from="1555386358572" duration="17701000" />
       <workItem from="1555415219874" duration="4739000" />
-      <workItem from="1555427374850" duration="6506000" />
+      <workItem from="1555427374850" duration="6771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145308000" />
+    <option name="totallyTimeSpent" value="145573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
