@@ -13,6 +13,10 @@ nav.main-nav {
     li {
       list-style: none;
 
+      &.current-page > a{
+        border-color: $my-green;
+      }
+
       a {
         padding: 1rem 2.5rem;
         text-decoration: none;

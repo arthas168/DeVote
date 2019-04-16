@@ -4,11 +4,11 @@
             <a href="/"><img src="../images/positive-vote-logo.png" height="64" width="64" alt="thumbs-up-icon"/>
             </a>
         </li>
-        {% for page in site.pages %}
-        {% if page.url != '/feed.xml' and page.url != '/' %}
-        <li>
-            <a href="{{ page.url }}">
-                <span class="title">{{ page.title }}</span>
+        {% for navitem in site.pages %}
+        {% if navitem.url != '/feed.xml' and navitem.url != '/' %}
+        <li {% if page.url == navitem.url %} class="current-page" {% endif %}>
+            <a href="{{ site.baseurl }}{{ navitem.url }}">
+                <span class="title">{{ navitem.title }}</span>
             </a>
         </li>
         {% endif %}

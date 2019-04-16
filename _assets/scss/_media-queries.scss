@@ -1,12 +1,20 @@
+@import 'variables';
+
 //Tablet
 @media (max-width: 1100px) {
 
   body .main-nav ul {
     flex-direction: column;
 
-    li a {
-      border: none;
-      text-decoration: underline;
+    li {
+      margin-bottom: 1rem;
+      a {
+        border: none;
+        text-decoration: underline;
+      }
+      &.current-page a, &.current-page a span{
+        color: $my-green;
+      }
     }
 
     margin: 0 auto 1rem;
@@ -45,15 +53,16 @@
 
   }
 
-  .confirmation-div,.vote-done-div{
+  .confirmation-div, .vote-done-div {
     left: 19rem;
     top: 12rem;
   }
 
-  .winner-div{
+  .winner-div {
     left: 19rem;
     top: 28rem;
-    span:nth-child(1){
+
+    span:nth-child(1) {
       margin-bottom: 0;
     }
   }
@@ -69,14 +78,14 @@
       height: 20rem;
     }
 
-    .hillary-btn, .trump-btn{
+    .hillary-btn, .trump-btn {
       left: 3rem;
       top: 10.5rem;
     }
 
   }
 
-  .form-container .icon{
+  .form-container .icon {
     left: 12px;
     top: 44px;
   }
@@ -122,20 +131,21 @@
     }
   }
 
-  .form-container .icon{
+  .form-container .icon {
     left: 10px;
     top: 38px;
   }
 
-  .confirmation-div,.vote-done-div{
+  .confirmation-div, .vote-done-div {
     left: 5rem;
     top: 12rem;
   }
 
-  .winner-div{
+  .winner-div {
     left: 6rem;
     top: 28rem;
-    span:nth-child(1){
+
+    span:nth-child(1) {
       margin-bottom: 0;
     }
   }
