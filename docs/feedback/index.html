@@ -50,12 +50,34 @@
         
         
     </ul>
-    <span class="welcome">Welcome, !</span>
 </nav>
 </header>
 
 <main class="site-content">
-    <
+    <div class="form-container sub-title">
+    <p>If you have any questions or recommendations for our project,
+        don't hesitate to send us a message!</p>
+    <hr>
+    <form>
+        <label for="name"><span>Name:</span><br>
+            <input type="text" placeholder="John Smith" id="name">
+            <span class="icon"><i class="fas fa-user"></i><span class="line"> |</span></span>
+        </label>
+
+        <label for="email"> <span>  Email:</span><br>
+            <input type="email" placeholder="your@email.com" id="email">
+            <span class="icon"><i class="fas fa-envelope"></i><span class="line"> |</span></span>
+        </label>
+
+        <label for="message"> <span>  Message:</span><br>
+            <textarea rows="4" cols="50" id="message"></textarea>
+        </label>
+
+        <a href="/feedback/" class="submit-form-button">
+            <span>Send</span>
+        </a>
+    </form>
+</div>
 </main>
 
 <footer class="site-footer">

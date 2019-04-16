@@ -1,7 +1,6 @@
 @import '_variables';
 
-body .learn-more-btn {
-
+body .learn-more-btn, .submit-form-button{
   margin-top: 2rem;
   padding: 1.25rem 2rem;
   text-decoration: none;
@@ -9,6 +8,7 @@ body .learn-more-btn {
   border: 1.5px solid white;
   text-align: center;
   color:white;
+  background: none;
 
   span{
     font-size: 18px;
@@ -16,5 +16,6 @@ body .learn-more-btn {
 
   &:hover {
     border-color: var(--color-my-green);
+    cursor:pointer;
   }
 }
